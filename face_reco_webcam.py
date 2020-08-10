@@ -5,14 +5,14 @@ import cv2
 video_capture = cv2.VideoCapture(0)
 
 image = fr.load_image_file("face.JPG")
-wenyi_image = fr.load_image_file("wenyi.jpeg")
-sz_image = fr.load_image_file("sz.jpeg")
+# wenyi_image = fr.load_image_file("wenyi.jpeg")
+# sz_image = fr.load_image_file("sz.jpeg")
 # take video and analyse
 image_face_encoding = fr.face_encodings(image)[0]
-wenyi_image_face_encoding = fr.face_encodings(wenyi_image)[0]
-sz_image_face_encoding = fr.face_encodings(sz_image)[0]
+# wenyi_image_face_encoding = fr.face_encodings(wenyi_image)[0]
+# sz_image_face_encoding = fr.face_encodings(sz_image)[0]
 # put other face if have other face
-known_face_encodings = [image_face_encoding,wenyi_image_face_encoding,sz_image_face_encoding]
+known_face_encodings = [image_face_encoding]
 # put other name if have other face
 know_face_names = ["Hau Yin","Wen Yi","SZU NING"]
 
